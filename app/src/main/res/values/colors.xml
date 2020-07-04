@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2196F3</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#03A9F4</color>
+    <color name="colorHeader">#2196F3</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="facebook">#2D55AE</color>
+    <color name="black">#000000</color>
+
+
+    <color name="color1">#424549</color>
+    <color name="color2">#7e455e</color>
+    <color name="color3">#796e25</color>
+    <color name="color4">#59717c</color>
+    <!-- Placeholder colors-->
+    <color name="stay_color">#999999</color>
+
+    <color name="gen_black">#000000</color>
+    <color name="gen_white">#FFFFFF</color>
+    <color name="green_light">#43A047</color>
+    <color name="grey_light">#E0E0E0</color>
+    <color name="grey">#808080</color>
+    <color name="question">#555</color>
+    <color name="blue">#007bff</color>
+
+
+
+
+
+</resources>

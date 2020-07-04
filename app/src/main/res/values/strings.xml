@@ -1,0 +1,91 @@
+<resources>
+    <string name="app_name">Seller App</string>
+    <string name="title_activity_dashboard">Zeeero</string>
+
+    <string name="nav_header_title"></string>
+    <string name="nav_header_subtitle"></string>
+    <string name="nav_header_desc">Navigation header</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <!--Menu item texts -->
+    <string name="action_settings">Settings</string>
+    <string name="action_search">Search</string>
+    <string name="action_cart">Cart</string>
+    <string name="action_notifications">Notifications</string>
+
+    <string name="item_1">Offers</string>
+    <string name="item_2">Electronics</string>
+    <string name="item_3">Lifestyle</string>
+    <string name="item_4">Home Appliances</string>
+    <string name="item_5">Books \u0026 More</string>
+    <string name="item_6">More</string>
+
+    <string name="my_profile">Edit Profile</string>
+    <string name="view_profile">View Profile</string>
+    <string name="my_orders">My Orders</string>
+    <string name="my_cart">My Cart</string>
+    <string name="my_wishlist">My Wishlist</string>
+    <string name="my_account">My Account</string>
+    <string name="logout">Logout</string>
+
+
+    <string name="help_support">Help \u0026 Support</string>
+    <string name="contact_us">About</string>
+    <string name="terms_conditions">Terms \u0026 Conditions</string>
+    <string name="help_center">Help Center</string>
+    <string name="FAQs">FAQs</string>
+
+    <string name="search_hint">Search for Products, Brands and More</string>
+
+
+    <!--Intro slider texts -->
+    <string name="title_activity_welcome">Home Screen</string>
+    <string name="next">NEXT</string>
+    <string name="skip">SKIP</string>
+    <string name="start">GO HOME</string>
+
+    <string name="slide_1_title">Welcome</string>
+    <string name="slide_1_desc">Enter your description here..
+    </string>
+
+    <string name="slide_2_title">Welcome</string>
+    <string name="slide_2_desc">Enter your description here..</string>
+
+    <string name="slide_3_title">Hello</string>
+    <string name="slide_3_desc">Enter your description here..</string>
+
+    <string name="slide_4_title">Hello</string>
+    <string name="slide_4_desc">Enter your description here.</string>
+
+    <string name="play_again_desc">To see the welcome slider again, goto Settings -> apps -> welcome
+        slider -> clear data
+    </string>
+    <string name="play_again">Once Again</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="all_categories">Top Rated Products</string>
+    <string name="view_more">View More</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="you_may_like">You May Like</string>
+
+    <string name="recently_show">Recently Viewed</string>
+
+
+    <!--    Errors-->
+
+    <string name="nameerror">Enter a valid name</string>
+    <string name="emailerror">Enter a valid email</string>
+    <string name="mobileerror">Enter a valid mobile</string>
+    <string name="dateerror">Enter a valid date</string>
+    <string name="ageerror">Enter a valid age</string>
+
+    <string name="tab_text_1">Upcoming</string>
+    <string name="tab_text_2">Pending</string>
+    <string name="tab_text_3">Ship</string>
+    <string name="tab_text_4">Completed</string>
+</resources>
