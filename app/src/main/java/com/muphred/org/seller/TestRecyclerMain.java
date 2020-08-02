@@ -6,6 +6,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 
+import java.util.ArrayList;
+
 public class TestRecyclerMain extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -14,7 +16,17 @@ public class TestRecyclerMain extends AppCompatActivity {
 
         RecyclerView programmingList=findViewById(R.id.programmingList);
         programmingList.setLayoutManager(new LinearLayoutManager(this));
-        String[] tutorial={"T-Shirt","Shoe","Mobile","PC","Laptop","Fan","AC","T-Shirt","Shoe","Mobile","PC","Laptop","Fan","AC"};
-        programmingList.setAdapter(new TestRecyclerAdapter(tutorial));
+
+        ArrayList<DataModel> arrayList=new ArrayList<>();
+        arrayList.add(new DataModel(1,"Java"));
+        arrayList.add(new DataModel(2,"C"));
+        arrayList.add(new DataModel(3,"C++"));
+
+
+
+        TestRecyclerAdapter testRecyclerAdapter=new TestRecyclerAdapter(TestRecyclerMain.this, arrayList);
+
+
+        programmingList.setAdapter(testRecyclerAdapter);
     }
 }
