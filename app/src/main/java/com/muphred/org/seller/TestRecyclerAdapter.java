@@ -1,5 +1,6 @@
 package com.muphred.org.seller;
 
+import android.content.Context;
 import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
@@ -9,46 +10,59 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import java.util.ArrayList;
+
 public class TestRecyclerAdapter extends RecyclerView.Adapter<TestRecyclerAdapter.ProgrammingViewHolder> {
 
     private String[] data;
-    public TestRecyclerAdapter(String[] data)
+    private ArrayList<DataModel> arrayList;
+    Context context;
+    final DataModel model=null;
+
+    public TestRecyclerAdapter(Context context, ArrayList<DataModel> arrayList)
     {
-        this.data=data;
+        this.context = context;
+        this.arrayList = arrayList;
     }
 
     @NonNull
     @Override
-    public ProgrammingViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
-        LayoutInflater inflater=LayoutInflater.from(viewGroup.getContext());
-        View view=inflater.inflate(R.layout.test_recycler_view,viewGroup,false);
-
-
+    public ProgrammingViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int position) {
+        LayoutInflater inflater=LayoutInflater.from(parent.getContext());
+        View view = (View)inflater.inflate(R.layout.test_recycler_view,parent,false);
 
 
         return new ProgrammingViewHolder(view);
     }
 
     @Override
-    public void onBindViewHolder(@NonNull ProgrammingViewHolder programmingViewHolder, int i) {
-        String title=data[i];
-        programmingViewHolder.txtTitle.setText(title);
+    public void onBindViewHolder(@NonNull ProgrammingViewHolder programmingViewHolder, int position) {
+        //String title=data[i];
+        final DataModel model=arrayList.get(position);
 
+        //ProgrammingViewHolder holder=(ProgrammingViewHolder)programmingViewHolder;
 
+        //programmingViewHolder.txtId.setText(model.getId());
+        int myId=model.getId();
+        String myTitle=model.getLanguage();
 
+        String myIdString= String.valueOf(myId);
+        programmingViewHolder.txtId.setText(myIdString);
+        programmingViewHolder.txtTitle.setText(myTitle);
     }
 
     @Override
     public int getItemCount() {
-        return data.length;
+
+        return (null != arrayList ? arrayList.size() : 0);
     }
 
     public class ProgrammingViewHolder extends RecyclerView.ViewHolder {
-        ImageView imgIcon;
+        TextView txtId;
         TextView txtTitle;
         public ProgrammingViewHolder(View itemView) {
             super(itemView);
-            imgIcon = (ImageView) itemView.findViewById(R.id.imgIcon);
+            txtId = (TextView) itemView.findViewById(R.id.txtId);
             txtTitle=(TextView) itemView.findViewById(R.id.txtTitle);
         }
     }
